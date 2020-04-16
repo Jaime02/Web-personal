@@ -8,7 +8,7 @@
 
     html {
       margin: 50px;
-      background-color: #050050
+      background-color: #03003b
     }
 
     header {
@@ -35,7 +35,7 @@
       text-decoration: underline;
     }
 
-    .texto {
+    .texto, a {
       text-align: left;
       font-size: 25px;
       color:white;
@@ -46,6 +46,15 @@
       font-size: 30px;
       color: white;
     }
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    iframe{
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
 
   </style>
   </head>
@@ -54,22 +63,38 @@
 
   <body>
       <div class="subtitulo">
-        <p>Bienvenido a mi web</p>
+      <p>Bienvenido a mi web</p>
       </div>
 
       <div class="texto">
       <p>Esta web contiene una lista con todos los proyectos de los que estoy orgulloso. Como puedes ver, de momento hay pocas cosas de las que estoy orgulloso.</p> 
       </div>
 
+      <hr>
+
       <div class="texto">
       <p>Lista de mis creaciones:</p>
       <ul>
-        <li>Proyecto de investigación: "Desarrollo de una aplicación de dibujo técnico"</li>
+      <li>Proyecto de investigación: "Desarrollo de una aplicación de dibujo técnico"</li>
+      <li>Canal de YouTube</li>
       </ul>
       </div>
 
-      <h2>Proyecto de investigación: "Desarrollo de una aplicación de dibujo técnico"</h2>
+      <hr>
 
+      <h2>Proyecto de investigación: "Desarrollo de una aplicación de dibujo técnico"</h2>
+      <p class="texto">Este proyecto es mi mayor hito hasta la fecha. Consiste en la creación de un programa informático enfocado al uso educativo del sistema diédrico.
+         El programa ha sido escrito en Python 3. Utiliza <a href="https://www.qt.io/" target="_blank">PyQt5</a> para la interfaz y <a href="https://www.opengl.org/" target="_blank">OpenGL</a> para el dibujado 3D. 
+         También utiliza <a href="https://www.sympy.org/en/index.html" target="_blank">Sympy</a> para los cálculos geométricos.
+      </p>
       <a class="texto" href="https://github.com/Jaime02/Proyecto-de-investigacion-2020-Dibujo-tecnico" target="_blank"> Enlace al repositorio de GitHub</a>
+
+      <hr>
+      
+      <h2>Canal de YouTube</h2>
+      
+      <iframe width="850" height="500" src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="850" height="500" src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
     </body>
 </html>
