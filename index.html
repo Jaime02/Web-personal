@@ -1,73 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Jaime Resano Aísa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-  <style>
-
-    html {
-      margin: 50px;
-      background-color: #03003b
-    }
-
-    header {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      font-size: 60px;
-      color: whitesmoke;
-      border: 2px solid white;
-      border-radius: 8px;
-      padding: 20px;
-      letter-spacing: 4px;
-      text-shadow: 0px 1px 0px #0b009e, 2px 1px 0px #0b009e, 1px 2px 0px #0b009e, 3px 2px 0px #0b009e, 2px 3px 0px #0b009e, 4px 3px 0px #0b009e, 3px 4px 0px #0b009e, 5px 4px 0px #0b009e, 3px 5px 0px #FFFFFF, 6px 5px 0px #FFFFFF,0px 3px 0px #FFFFFF, 1px 4px 0px #FFFFFF,2px 5px 0px #FFFFFF,3px 0px 0px #FFFFFF, 4px 1px 0px #FFFFFF, 5px 2px 0px #FFFFFF, 6px 3px 0px #FFFFFF, 7px 4px 0px #FFFFFF;
-    }
-    
-    body {
-      font-family: Cambria, Cochin;
-    }
-
-    .texto, a {
-      text-align: left;
-      font-size: 25px;
-      color:white;
-    }
-
-    h2 {
-      text-align: left;
-      font-size: 30px;
-      color: white;
-    }
-    
-    hr {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
-    iframe{
-      padding-left: 20px;
-      padding-bottom: 20px;
-    }
-
-    @keyframes blinkAnim {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    }
-
-    .palabras_animadas {
-      margin-top: 20px;
-      font-size: 40px;
-      color: white;
-      font-family: Arial, sans-serif;
-      background-color: #030031;
-    }
-
-    .palabras_animadas:before {
-      content: 'Pasión por ';
-      animation: blinkNaim 500ms linear infinite;
-    }
-
-  </style>
   </head>
 
   <header>Jaime Resano Aísa</header>
@@ -76,7 +13,6 @@
       <div class="palabras_animadas">
       <span id="word"></span>
       </div>
-      
       <div class="texto">
       <p>Esta web contiene una lista con todos los proyectos de los que estoy orgulloso. Como puedes ver, de momento hay pocas cosas de las que estoy orgulloso.</p> 
       </div>
@@ -88,6 +24,7 @@
       <ul>
       <li>Proyecto de investigación: "Desarrollo de una aplicación de dibujo técnico"</li>
       <li>Canal de YouTube</li>
+      <li>Esta web</li>
       </ul>
       </div>
 
@@ -109,41 +46,16 @@
       
       <iframe width="850" height="500" src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="850" height="500" src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <script src="scripts.js"></script>
+      
+      <hr>
+      <h2>Esta web</h2>
+      <p class="texto">Yo mismo he hecho esta página web. Su código está disponible en el siguiente <a href="https://github.com/Jaime02/web-personal" target="_blank">repositorio</a></p>
+    
+      <hr>
 
-      <script>
-      var words = ['Python.', 'la programación.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'aprender.','las matemáticas.', 'el código abierto', 'los grandes proyectos.', 'nuevas tecnologías.'],
-      wordWrapper = document.getElementById('word'),
-      wordWrapperContent = wordWrapper.innerHTML,
-      addingWord = false,
-      counter = 1;
-      
-      setInterval(function(){
-
-        if(wordWrapperContent.length > 0 && !addingWord ) {
-          wordWrapper.innerHTML = wordWrapperContent.slice(0, -1);
-          wordWrapperContent = wordWrapper.innerHTML;
-        } else {
-          addingWord = true;
-        }
-      
-        if( addingWord ){
-          if( wordWrapperContent.length < words[counter].length  ) {
-            wordWrapper.innerHTML = words[counter].slice(0, wordWrapperContent.length + 1);
-            wordWrapperContent = wordWrapper.innerHTML;
-          } else {
-            if( counter < words.length) {
-              counter ++
-            }
-            addingWord = false;
-          }
-        }
-      
-        if( counter == words.length) {
-          counter = 0;
-        }
-      
-      }, 250);
-      </script>
-
+      <h2>Información de contacto:</h2>
+      <a href="mailto:gemailpersonal02@gmail.com" target="_blank">Envíame un email</a>
     </body>
 </html>
