@@ -1,11 +1,17 @@
-var words = ['Python.', 'la programación.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'aprender.','las matemáticas.', 'el código abierto', 'los grandes proyectos.', 'nuevas tecnologías.'],
+var words = ['Python.', 'la programación.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'aprender.','las matemáticas.', 'el código abierto.', 'los grandes proyectos.', 'nuevas tecnologías.'],
 wordWrapper = document.getElementById('word');
 wordWrapperContent = wordWrapper.innerHTML;
 addingWord = false;
-counter = 1;
+counter = 0;
+esperar = false;
 
 // Esta función hace el efecto de borrar el texto
-setInterval(function(){
+function loop() {
+setTimeout(async ()=>{
+  if (esperar){
+    esperar = false;
+    await new Promise(r => setTimeout(r, 2000));
+  }
   if(wordWrapperContent.length > 0 && !addingWord ) {
     wordWrapper.innerHTML = wordWrapperContent.slice(0, -1);
     wordWrapperContent = wordWrapper.innerHTML;
@@ -19,6 +25,7 @@ setInterval(function(){
       wordWrapperContent = wordWrapper.innerHTML;
     } else {
       if (counter < words.length) {
+        esperar = true;
         counter++;
       }
       addingWord = false;
@@ -27,7 +34,9 @@ setInterval(function(){
   if (counter == words.length) {
     counter = 0;
   }
-}, 250);
+  loop();
+}, Math.floor(Math.random() * 250 + 80));
+} loop();
 
 // Función para activar el modo oscuro
 var modo_oscuro = true;

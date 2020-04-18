@@ -72,12 +72,20 @@ hr {
 
 .palabras_animadas:after {
   content: '';
+  animation: blinkAnim 1000ms infinite;
   background-color: lime;
-  width: 5px;
+  width: 3px;
   position: absolute;
   top: 5px;
   bottom: 5px;
   right: -5px;
+}
+
+.terminal {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .video {
