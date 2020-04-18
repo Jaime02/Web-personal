@@ -50,5 +50,7 @@ function cambiar() {
   }
 }
 
+document.querySelector("#imagen").addEventListener('click',()=>{cambiar();});
+
 // Cuando la página se carga, se ejecuta una lambda que establece el data-theme en dark
-window.addEventListener("DOMContentLoaded", ()=>{document.documentElement.setAttribute('data-theme', 'dark')})
+// window.addEventListener("DOMContentLoaded", ()=>{document.documentElement.setAttribute('data-theme', 'dark')})

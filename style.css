@@ -63,11 +63,21 @@ hr {
   margin-top: 20px;
   font-size: 40px;
   font-family: Arial, sans-serif;
+  position: relative;
 }
 
 .palabras_animadas:before {
-  content: 'Pasión por ';
-  animation: blinkNaim 500ms linear infinite;
+  content: '> Pasión por ';
+}
+
+.palabras_animadas:after {
+  content: '';
+  background-color: lime;
+  width: 5px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: -5px;
 }
 
 .video {
