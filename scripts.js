@@ -1,7 +1,7 @@
 var words = ['Python.', 'la programación.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'aprender.','las matemáticas.', 'el código abierto', 'los grandes proyectos.', 'nuevas tecnologías.'],
-wordWrapper = document.getElementById('word'),
-wordWrapperContent = wordWrapper.innerHTML,
-addingWord = false,
+wordWrapper = document.getElementById('word');
+wordWrapperContent = wordWrapper.innerHTML;
+addingWord = false;
 counter = 1;
 
 // Esta función hace el efecto de borrar el texto
@@ -19,7 +19,7 @@ setInterval(function(){
       wordWrapperContent = wordWrapper.innerHTML;
     } else {
       if (counter < words.length) {
-        counter ++
+        counter++;
       }
       addingWord = false;
     }
@@ -27,7 +27,6 @@ setInterval(function(){
   if (counter == words.length) {
     counter = 0;
   }
-
 }, 250);
 
 // Función para activar el modo oscuro
@@ -50,3 +49,6 @@ function cambiar() {
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 }
+
+// Cuando la página se carga, se ejecuta una lambda que establece el data-theme en dark
+window.addEventListener("DOMContentLoaded", ()=>{document.documentElement.setAttribute('data-theme', 'dark')})
