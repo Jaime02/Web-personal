@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Jaime Resano Aísa</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="./style.css">
   </head>
 
   <header>Jaime Resano Aísa</header>
@@ -36,26 +35,40 @@
          También utiliza <a href="https://www.sympy.org/en/index.html" target="_blank">Sympy</a> para los cálculos geométricos.
       </p>
 
-      <img src="Programa.png"></img> <br>
+      <img src="./Programa.png"></img> <br>
 
       <a class="texto" href="https://github.com/Jaime02/Proyecto-de-investigacion-2020-Dibujo-tecnico" target="_blank"> Enlace al repositorio de GitHub</a>
 
       <hr>
       
       <h2>Canal de YouTube</h2>
-      
-      <iframe width="850" height="500" src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="850" height="500" src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-      <script src="scripts.js"></script>
-      
+
+      <table>
+      <tr>
+      <th>
+      <iframe class="video" src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </th>
+      <th>
+      <iframe class="video" src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </tr>
+      </table>
+
       <hr>
       <h2>Esta web</h2>
-      <p class="texto">Yo mismo he hecho esta página web. Su código está disponible en el siguiente <a href="https://github.com/Jaime02/web-personal" target="_blank">repositorio</a></p>
+      <p class="texto">Yo mismo he hecho esta página web. Su código está disponible en el siguiente <a href="https://github.com/Jaime02/web-personal" target="_blank">repositorio</a>.</p>
     
       <hr>
 
       <h2>Información de contacto:</h2>
       <a href="mailto:gemailpersonal02@gmail.com" target="_blank">Envíame un email</a>
+
+      <script src="./scripts.js"></script>
+
+      <div class="sticky">
+      <img src=./Luna.png width="32" height="32" id="imagen" onclick="cambiar();"></div>
+      </div>
+      <!-- Esta función cambia el modo oscuro a claro y vivecersa -->
+      <script>cambiar(); cambiar();</script>
+
     </body>
 </html>
