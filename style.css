@@ -102,15 +102,12 @@ hr {
   cursor: pointer;
 }
 
-li {
-  width: 100%;
-}
-
 .container {
   display: flex;
   justify-content: center;
   list-style: none;
   width: 100%;
+  justify-content: space-around;
 }
 
 iframe {
