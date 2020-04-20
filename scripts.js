@@ -12,14 +12,15 @@ setTimeout(async ()=>{
     esperar = false;
     await new Promise(r => setTimeout(r, 2000));
   }
-  if(wordWrapperContent.length > 0 && !addingWord ) {
+
+  if (wordWrapperContent.length > 0 && !addingWord) {
     wordWrapper.innerHTML = wordWrapperContent.slice(0, -1);
     wordWrapperContent = wordWrapper.innerHTML;
   } else {
     addingWord = true;
   }
 
-  if(addingWord){
+  if (addingWord){
     if(wordWrapperContent.length < words[counter].length) {
       wordWrapper.innerHTML = words[counter].slice(0, wordWrapperContent.length + 1);
       wordWrapperContent = wordWrapper.innerHTML;
@@ -31,12 +32,15 @@ setTimeout(async ()=>{
       addingWord = false;
     }
   }
+
   if (counter == words.length) {
     counter = 0;
   }
+
   loop();
 }, Math.floor(Math.random() * 250 + 80));
 } loop();
+
 
 // Función para activar el modo oscuro
 var modo_oscuro = true;
@@ -60,6 +64,3 @@ function cambiar() {
 }
 
 document.querySelector("#imagen").addEventListener('click',()=>{cambiar();});
-
-// Cuando la página se carga, se ejecuta una lambda que establece el data-theme en dark
-// window.addEventListener("DOMContentLoaded", ()=>{document.documentElement.setAttribute('data-theme', 'dark')})

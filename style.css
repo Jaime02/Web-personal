@@ -11,7 +11,7 @@
 }
 
 html {
-  margin: 50px;
+  margin: 35px;
   background-color: var(--fondo)
 }
 
@@ -28,13 +28,14 @@ header {
 }
 
 body {
-  font-family: Cambria, Cochin;
+  font-family: Arial, Cambria, Cochin;
   color: var(--texto);
 }
 
 img {
   max-width: 100%;
   height: auto;
+  border: 3px solid black;
 }
 
 .texto, a {
@@ -52,7 +53,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 
 @keyframes blinkAnim {
 0% {opacity: 0;}
@@ -84,28 +84,37 @@ hr {
 .terminal {
   background-color: black;
   color: white;
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.video {
-  width: 100%;
-  height: 30vw;
-}
-
-table {
-  width: 100%;
-}
-
 .boton_modo_oscuro{
-  margin:0px;
-  position:fixed;
-  right:0px;
-  top:10px;
-  width:32px;
+  margin: 2px;
+  position: fixed;
+  right: 0px;
+  top: 40px;
+  width: 32px;
   z-index: 1100;
   list-style-type: none;
   height: 32px;
   padding: 0px;
   cursor: pointer;
+}
+
+li {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 28.125%;
 }
