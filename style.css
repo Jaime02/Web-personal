@@ -11,7 +11,10 @@
 }
 
 html {
-  margin: 35px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15vw;
+  margin-right: 15vw;
   background-color: var(--fondo)
 }
 
