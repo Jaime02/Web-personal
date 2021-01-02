@@ -1,4 +1,4 @@
-var words = ['Python.', 'la programación.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'aprender.', 'las matemáticas.', 'el código abierto.', 'los grandes proyectos.', 'nuevas tecnologías.'];
+var words = ['Python.', 'coding.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'learning.', 'math.', 'open source.', 'big projects.', 'new technologies.'];
 var wordWrapper = document.getElementById('word');
 wordWrapperContent = wordWrapper.innerHTML;
 addingWord = false;

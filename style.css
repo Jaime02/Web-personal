@@ -72,7 +72,7 @@ hr {
 }
 
 .palabras_animadas:before {
-  content: '> Pasión por ';
+  content: '> I love ';
 }
 
 .palabras_animadas:after {
@@ -94,7 +94,7 @@ hr {
   padding-bottom: 10px;
 }
 
-.boton_modo_oscuro{
+.boton_modo_oscuro {
   margin: 2px;
   position: fixed;
   right: 0px;
