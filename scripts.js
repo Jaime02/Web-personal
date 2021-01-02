@@ -47,21 +47,16 @@ var modo_oscuro = true;
 function cambiar() {
   const img1 = './Bombilla.png';
   const img2 = './Luna.png';
-  const banner_claro = './Banner.png';
-  const banner_oscuro = './Banner oscuro.png';
   const element = document.body;
 
   const imgElement = document.getElementById('imagen');
-  const banner = document.getElementById('Banner');
 
   if (modo_oscuro) {
     imgElement.src = img2;
-    banner.src = banner_claro;
     modo_oscuro = false;
     document.documentElement.setAttribute('data-theme', 'light');
   } else {
     imgElement.src = img1;
-    banner.src = banner_oscuro;
     modo_oscuro = true;
     document.documentElement.setAttribute('data-theme', 'dark');
   }
