@@ -44,7 +44,7 @@ img {
 }
 
 .texto, a {
-  text-align: left;
+  text-align: justify;
   font-size: 25px;
   color: var(--texto);
 }
