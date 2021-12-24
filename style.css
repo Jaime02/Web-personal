@@ -11,17 +11,17 @@
 }
 
 html {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 12vw;
+  margin-right: 12vw;
   background-color: var(--fondo)
 }
 
 header {
   text-align: center;
   font-family: Arial, sans-serif;
-  font-size: 60px;
+  font-size: 3rem;
   color: var(--texto);
   border: 2px solid var(--texto);
   border-radius: 8px;
@@ -38,25 +38,27 @@ body {
 img {
   width: 100%;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .texto, a {
   text-align: justify;
-  font-size: 25px;
+  font-size: 1.3rem;
   color: var(--texto);
+  text-indent: 1.6em;
 }
 
 h2 {
   text-align: left;
   font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 @keyframes blinkAnim {

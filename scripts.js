@@ -1,15 +1,15 @@
-var words = ['Python.', 'coding.', 'OpenGL.', 'Sympy.', 'PyQt5.', 'learning.', 'math.', 'open source.', 'big projects.', 'new technologies.'];
+var words = ['Python.', 'coding.', 'Qt.', 'learning.', 'open source.', 'big projects.', 'PySide.', 'new technologies.', 'music.'];
 var wordWrapper = document.getElementById('word');
 wordWrapperContent = wordWrapper.innerHTML;
 addingWord = false;
 counter = 0;
-esperar = false;
+wait = false;
 
 function loop() {
-  // Esta función hace el efecto de borrar el texto
+  // This function deletes and adds the text
   setTimeout(async () => {
-    if (esperar) {
-      esperar = false;
+    if (wait) {
+      wait = false;
       await new Promise((r) => setTimeout(r, 2000));
     }
 
@@ -26,7 +26,7 @@ function loop() {
         wordWrapperContent = wordWrapper.innerHTML;
       } else {
         if (counter < words.length) {
-          esperar = true;
+          wait = true;
           counter++;
         }
         addingWord = false;
@@ -42,22 +42,20 @@ function loop() {
 } loop();
 
 
-// Función para activar el modo oscuro
-var modo_oscuro = true;
+// Toggle dark mode
+var dark_mode = true;
 function cambiar() {
   const img1 = './Bombilla.png';
   const img2 = './Luna.png';
-  const element = document.body;
-
   const imgElement = document.getElementById('imagen');
 
-  if (modo_oscuro) {
+  if (dark_mode) {
     imgElement.src = img2;
-    modo_oscuro = false;
+    dark_mode = false;
     document.documentElement.setAttribute('data-theme', 'light');
   } else {
     imgElement.src = img1;
-    modo_oscuro = true;
+    dark_mode = true;
     document.documentElement.setAttribute('data-theme', 'dark');
   }
 }
