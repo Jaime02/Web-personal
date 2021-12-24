@@ -13,8 +13,8 @@
 html {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 12vw;
-  margin-right: 12vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
   background-color: var(--fondo)
 }
 
@@ -27,7 +27,7 @@ header {
   border-radius: 8px;
   padding: 20px;
   letter-spacing: 4px;
-  text-shadow: 0px 1px 0px var(--titulo), 2px 1px 0px var(--titulo), 1px 2px 0px var(--titulo), 3px 2px 0px var(--titulo), 2px 3px 0px var(--titulo), 4px 3px 0px var(--titulo), 3px 4px 0px var(--titulo), 5px 4px 0px var(--titulo), 3px 5px 0px var(--texto), 6px 5px 0px var(--texto),0px 3px 0px var(--texto), 1px 4px 0px var(--texto),2px 5px 0px var(--texto),3px 0px 0px var(--texto), 4px 1px 0px var(--texto), 5px 2px 0px var(--texto), 6px 3px 0px var(--texto), 7px 4px 0px var(--texto);
+  text-shadow: 0px 1px 0px var(--titulo), 2px 1px 0px var(--titulo), 1px 2px 0px var(--titulo), 3px 2px 0px var(--titulo), 2px 3px 0px var(--titulo), 4px 3px 0px var(--titulo), 3px 4px 0px var(--titulo), 5px 4px 0px var(--titulo), 3px 5px 0px var(--texto), 6px 5px 0px var(--texto), 0px 3px 0px var(--texto), 1px 4px 0px var(--texto), 2px 5px 0px var(--texto), 3px 0px 0px var(--texto), 4px 1px 0px var(--texto), 5px 2px 0px var(--texto), 6px 3px 0px var(--texto), 7px 4px 0px var(--texto);
 }
 
 body {
@@ -40,13 +40,22 @@ img {
   height: auto;
   margin-top: 5px;
   margin-bottom: 5px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
-.texto, a {
+p, a {
   text-align: justify;
   font-size: 1.3rem;
   color: var(--texto);
   text-indent: 1.6em;
+}
+
+li {
+  text-indent: 0.6em;
+  line-height: 1.6em;
+
 }
 
 h2 {
@@ -62,8 +71,13 @@ hr {
 }
 
 @keyframes blinkAnim {
-0% {opacity: 0;}
-50% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 .palabras_animadas {
