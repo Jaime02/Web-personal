@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <title>Jaime Resano Aísa</title>
   <link rel="stylesheet" type="text/css" href="./style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.5.0/dist/lazyload.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazy-youtube-embed@1.0.0/dist/lazy-youtube-embed.js" defer></script>
 </head>
 
 <header>Jaime Resano Aísa</header>
 
 <body>
-  <script>var lazyLoadInstance = new LazyLoad();</script>
-
   <div class="terminal">
     <span class="animated_words" id="word"></span>
   </div>
@@ -53,12 +53,10 @@
     village.</p>
   <ul class="container" style="padding-inline-start: 0px;">
     <li style="width: 49%;">
-      <iframe class="lazy" data-src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <a style="background-color: transparent;" href="https://www.youtube.com/embed/-e3rVOB_YXM" class="lazy-youtube-embed">Video tutorial programa</a>
     </li>
     <li style="width: 49%;">
-      <iframe class="lazy" data-src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <a style="background-color: transparent;" href="https://www.youtube.com/embed/JtC1NjetLaQ" class="lazy-youtube-embed">Video tutorial instalación</a>
     </li>
   </ul>
 
@@ -120,9 +118,6 @@
   <img class="toggle_theme_button" src=./light-mode.png width="50" id="imagen">
 
   <script src="./scripts.js"></script>
-
-  <script>lazyLoadInstance.update();</script>
-
 </body>
 
 </html>
