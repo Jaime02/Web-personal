@@ -80,19 +80,19 @@ hr {
   }
 }
 
-.palabras_animadas {
+.animated_words {
   margin-top: 20px;
   font-size: 40px;
   font-family: Arial, sans-serif;
   position: relative;
 }
 
-.palabras_animadas:before {
+.animated_words:before {
   padding-left: 10px;
   content: '> I love ';
 }
 
-.palabras_animadas:after {
+.animated_words:after {
   content: '';
   animation: blinkAnim 1000ms infinite;
   background-color: lime;
@@ -111,16 +111,14 @@ hr {
   padding-bottom: 10px;
 }
 
-.boton_modo_oscuro {
-  margin: 2px;
+.toggle_theme_button {
   position: fixed;
-  right: 0px;
-  top: 40px;
-  width: 32px;
+  margin: 0;
+  right: 2px;
+  top: 28px;
+  width: 60px;
   z-index: 1100;
-  list-style-type: none;
-  height: 32px;
-  padding: 0px;
+  height: 60px;
   cursor: pointer;
 }
 
