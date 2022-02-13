@@ -20,8 +20,7 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Lazy load -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/logico/lazy-youtube-embed/dist/lazy-youtube-embed.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazy-youtube-embed@1.0.0/dist/lazy-youtube-embed.js" defer></script>
+  <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@latest/dist/lazyload.min.js"></script>
 </head>
 
 <header>Jaime Resano Aísa</header>
@@ -57,7 +56,8 @@
 
   <img src="./program-screenshot.png" alt="Screenshot of the program"></img> <br>
 
-  <a href="https://github.com/Jaime02/Proyecto-de-investigacion-2020-Dibujo-tecnico" target="_blank">
+  <a href="https://github.com/Jaime02/Proyecto-de-investigacion-2020-Dibujo-tecnico" target="_blank"
+    style="text-align: center; display: block;">
     Link to its source code
   </a>
 
@@ -65,14 +65,32 @@
   <h2 id="youtube-channel">Youtube channel</h2>
   <p>I uploaded two videos about the technical drawing project I did. I also uploaded some traditional songs of my
     village.</p>
-  <ul class="container" style="padding-inline-start: 0px;">
-    <li style="width: 49%;">
-      <a style="background-color: transparent;" href="https://www.youtube.com/embed/-e3rVOB_YXM" class="lazy-youtube-embed">Video tutorial program</a>
-    </li>
-    <li style="width: 49%;">
-        <a style="background-color: transparent;" href="https://www.youtube.com/embed/JtC1NjetLaQ" class="lazy-youtube-embed">Video tutorial installation</a>
-    </li>
-  </ul>
+
+  <div class="container">
+
+    <iframe class="lazy" data-src="https://www.youtube.com/embed/-e3rVOB_YXM" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <iframe class="lazy" data-src="https://www.youtube.com/embed/JtC1NjetLaQ" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+  </div>
+
+  <script>
+    // Set the options globally
+    // to make LazyLoad self-initialize
+    window.lazyLoadOptions = {
+      // Your custom settings go here
+    };
+
+    // Listen to the initialization event
+    // and get the instance of LazyLoad
+    window.addEventListener("LazyLoad::Initialized", function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    }, false);
+  </script>
 
   <hr>
   <h2 id="qt">Qt</h2>
@@ -87,8 +105,8 @@
 
   <p>I took part in the 2021 Hacktoberferst with the Python Spain Discord community and I contributed to
     the Qt documentation, translating some C++ examples to Python. It has been an amazing experience to learn how to
-    carry out all of the process. I cloned both the C++ and Python repositories, I set up my Gerrit and Git 
-    enviromnent properly (which was the hardest part of all the process), I transpiled the examples carefuly and I 
+    carry out all of the process. I cloned both the C++ and Python repositories, I set up my Gerrit and Git
+    enviromnent properly (which was the hardest part of all the process), I transpiled the examples carefuly and I
     pushed the work, which is already merged.
     The best part of the experience is meeting a lot of amazing people and receiving feedback. I really encourage people
     to get into contributing to open source projects such as Qt, it is very enjoyable.
@@ -97,7 +115,6 @@
       href="https://www.qt.io/blog/welcome-to-our-qt-champions-for-2021#:~:text=We%20also%20have,both%20of%20you!">Qt
       2021 champions!</a></p>
 
-
   <hr>
   <h2 id="qt-quicksort">Qt QuickSort</h2>
   <p>
@@ -105,8 +122,10 @@
     how QuickSort works and I helped my classmates to achieve the same goal. The result is quite beautiful, but I did
     not have much time to polish the project due to university tasks.
   </p>
-  <img alt="Qt QuickSort gif" style="max-width: fit-content;" src="https://github.com/Jaime02/QQuickSort/raw/master/thumbnail.gif"></img>
-  <a href="https://github.com/Jaime02/QQuickSort" target="_blank">
+  <img alt="Qt QuickSort gif" style="max-width: fit-content;"
+    src="https://github.com/Jaime02/QQuickSort/raw/master/thumbnail.gif"></img>
+
+  <a href="https://github.com/Jaime02/QQuickSort" target="_blank" style="text-align: center; display: block;">
     Link to its source code</a>
 
   <hr>
@@ -120,8 +139,9 @@
 
   <hr>
   <h2 id="this-website">This website</h2>
-  <p>This website has been built by me. It ain't much, but its honest work. Its 
-    <a href="https://github.com/Jaime02/web-personal" target="_blank">source code is avaiable here</a>.</p>
+  <p>This website has been built by me. It ain't much, but its honest work. Its
+    <a href="https://github.com/Jaime02/web-personal" target="_blank">source code is avaiable here</a>.
+  </p>
 
   <hr>
   <h2 id="contact">Contact</h2>
