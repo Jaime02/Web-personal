@@ -82,9 +82,9 @@ iframe {
   margin: 0;
   right: 2px;
   top: 28px;
-  width: 6vw;
+  width: 8vh;
   z-index: 1100;
-  height: 6vw;
+  height: 8vh;
   cursor: pointer;
 }
 
