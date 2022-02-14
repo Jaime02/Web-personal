@@ -77,47 +77,6 @@ iframe {
   padding: 2px;
 }
 
-@keyframes blinkAnim {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-.animated_words {
-  margin-top: 20px;
-  font-size: 40px;
-  font-family: Arial, sans-serif;
-  position: relative;
-}
-
-.animated_words:before {
-  padding-left: 10px;
-  content: '> I love ';
-}
-
-.animated_words:after {
-  content: '';
-  animation: blinkAnim 1000ms infinite;
-  background-color: lime;
-  width: 3px;
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  right: -5px;
-}
-
-.terminal {
-  background-color: black;
-  color: white;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .toggle_theme_button {
   position: fixed;
   margin: 0;
