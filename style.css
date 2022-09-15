@@ -1,13 +1,17 @@
 [data-theme="light"] {
   --titulo: white;
   --fondo: white;
-  --texto: #000000;
+  --text: #000000;
+  --shadow: rgb(0, 0, 0, 0.6);
+  --shadow-size: 10px;
 }
 
 [data-theme="dark"] {
   --titulo: #0b009e;
   --fondo: #03003b;
-  --texto: white;
+  --text: white;
+  --shadow: #0b009e;
+  --shadow-size: 10px;
 }
 
 html {
@@ -23,17 +27,20 @@ header {
   text-align: center;
   font-family: Arial, sans-serif;
   font-size: 3rem;
-  color: var(--texto);
-  border: 2px solid var(--texto);
+  color: var(--text);
+  border: 2px solid var(--text);
   border-radius: 8px;
   padding: 20px;
   letter-spacing: 4px;
-  text-shadow: 0px 1px 0px var(--titulo), 2px 1px 0px var(--titulo), 1px 2px 0px var(--titulo), 3px 2px 0px var(--titulo), 2px 3px 0px var(--titulo), 4px 3px 0px var(--titulo), 3px 4px 0px var(--titulo), 5px 4px 0px var(--titulo), 3px 5px 0px var(--texto), 6px 5px 0px var(--texto), 0px 3px 0px var(--texto), 1px 4px 0px var(--texto), 2px 5px 0px var(--texto), 3px 0px 0px var(--texto), 4px 1px 0px var(--texto), 5px 2px 0px var(--texto), 6px 3px 0px var(--texto), 7px 4px 0px var(--texto);
+  text-shadow: 0px 1px 0px var(--titulo), 2px 1px 0px var(--titulo), 1px 2px 0px var(--titulo), 3px 2px 0px var(--titulo), 2px 3px 0px var(--titulo), 4px 3px 0px var(--titulo), 3px 4px 0px var(--titulo), 5px 4px 0px var(--titulo), 3px 5px 0px var(--text), 6px 5px 0px var(--text), 0px 3px 0px var(--text), 1px 4px 0px var(--text), 2px 5px 0px var(--text), 3px 0px 0px var(--text), 4px 1px 0px var(--text), 5px 2px 0px var(--text), 6px 3px 0px var(--text), 7px 4px 0px var(--text);
 }
 
 body {
   font-family: Arial, Cambria, Cochin;
-  color: var(--texto);
+  color: var(--text);
+  box-shadow: 0px 0px 50px var(--shadow-size) var(--shadow);
+  padding: 20px;
+  border-radius: 8px;
 }
 
 img {
@@ -49,8 +56,8 @@ img {
 p, a {
   text-align: justify;
   font-size: 1.3rem;
-  color: var(--texto);
-  text-indent: 1.6em;
+  color: var(--text);
+  text-indent: 1.1em;
 }
 
 li {
