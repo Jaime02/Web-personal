@@ -4,6 +4,7 @@
   --text: #000000;
   --shadow: rgb(0, 0, 0, 0.6);
   --shadow-size: 10px;
+  --link: #594eff;
 }
 
 [data-theme="dark"] {
@@ -12,6 +13,7 @@
   --text: white;
   --shadow: #0b009e;
   --shadow-size: 10px;
+  --link: #594eff;
 }
 
 html {
@@ -58,6 +60,10 @@ p, a {
   font-size: 1.3rem;
   color: var(--text);
   text-indent: 1.1em;
+}
+
+a:hover {
+  color: var(--link);
 }
 
 li {
